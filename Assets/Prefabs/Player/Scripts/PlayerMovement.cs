@@ -16,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
         intervalTime = 2f; // Aplica la fuerza cada 2 segundos
 
         speed = new Vector3(5f, 0, 0); // Velocidad en la dirección X
-        setMovementStrategy(new SmoothMovemet());
+        // setMovementStrategy(new SmoothMovemet());
+        setMovementStrategy(new AcelerateMovement());
     }
 
     // Update is called once per frame
