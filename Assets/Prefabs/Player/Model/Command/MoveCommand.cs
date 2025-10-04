@@ -9,11 +9,12 @@ public class MoveCommand : ICommand
     {
         this.playerMovement = playerMovement;
         this.input = input;
+        playerMovement.setMovementStrategy(new SmoothMovemet());
+
     }
     
     public void Execute()
     {
-        playerMovement.setMovementStrategy(new SmoothMovemet());
         playerMovement.MovePlayer(input);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created

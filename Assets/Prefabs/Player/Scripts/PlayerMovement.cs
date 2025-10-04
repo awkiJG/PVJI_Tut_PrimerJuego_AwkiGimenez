@@ -14,14 +14,14 @@ public class PlayerMovement : MonoBehaviour
         timeSinceLastForce = 0f;
         intervalTime = 2f; // Aplica la fuerza cada 2 segundos
 
-        player = new Player(5f, 5f);
+        player = new Player(5f, 10f);
         // setMovementStrategy(new SmoothMovemet());
-        setMovementStrategy(new AcelerateMovement());
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(player.AceleratedSpeed);
     }
 
     public void MovePlayer(float input)
