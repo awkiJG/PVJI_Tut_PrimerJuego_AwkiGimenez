@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     {
         forceToApply = new Vector3(300, 0, 0); // Fuerza en la dirección Z
         timeSinceLastForce = 0f;
-        intervalTime = 2f; // Aplica la fuerza cada 2 segundos
+        intervalTime = 1.5f; // Aplica la fuerza cada 2 segundos
 
         player = new Player(5f, 10f);
         // setMovementStrategy(new SmoothMovemet());
